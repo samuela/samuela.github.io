@@ -1,1 +1,67 @@
-Hello world!
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Samuel Ainsworth</title>
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+
+  <style>
+    .profilepic {
+      width: 300px;
+      height: 300px;
+      background-image: url(squatting.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+    .socialicons a {
+      background-color: #1e87f0;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="uk-container uk-container-small uk-flex uk-flex-center">
+    <div class="uk-flex uk-flex-middle uk-flex-column" style="margin-top: 5%;">
+      <div class="profilepic uk-box-shadow-large"></div>
+      <h1 class="uk-heading-primary"><span>Samuel</span>&nbsp;&nbsp;<span>Ainsworth</span></h1>
+      <div class="uk-margin-medium-bottom socialicons">
+        <a href="mailto:skainsworth@gmail.com" class="uk-icon-button uk-margin-small-right" uk-icon="mail"></a>
+        <a href="https://github.com/samuela" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
+        <a href="https://www.linkedin.com/in/samuelainsworth" class="uk-icon-button" uk-icon="linkedin"></a>
+      </div>
+      <div class="uk-margin-medium-bottom uk-flex">
+        <button class="uk-button uk-button-danger uk-margin-small-right">PUBLICATIONS</button>
+        <button class="uk-button uk-button-danger uk-margin-small-right">CODE</button>
+        <button class="uk-button uk-button-danger">CONSULTING</button>
+      </div>
+      <div class="uk-margin-medium-bottom uk-text-small" style="max-width: 450px; text-align: justify;">
+        <p>
+          I'm a PhD student working on machine learning at the Paul G. Allen
+          School of Computer Science &amp; Engineering at the University of
+          Washington. I'm currently thinking about streaming inference for
+          dynamical systems but you can often find me daydreaming about problems
+          in deep generative models, optimization, or even programming
+          languages.
+        </p>
+        <p>
+          Before joining the University of Washington I spent four wonderful
+          years at Brown, followed by a stint in Silicon Valley working on
+          self-driving cars among other wild things.
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+</body>
+</html>
