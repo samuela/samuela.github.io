@@ -10,37 +10,91 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
 
   <style>
+    .main-container {
+      margin-top: 5%;
+    }
     .profilepic {
-      width: 300px;
-      height: 300px;
+      width: 280px;
+      height: 280px;
       background-image: url(squatting.jpg);
       background-size: cover;
       background-position: center;
       border-radius: 50%;
     }
+    .socialicons {
+      margin-bottom: 40px;
+    }
     .socialicons a {
       background-color: #1e87f0;
+      /* background-color: #f0506e; */
       color: white;
+    }
+    .navbuttons {
+      margin-bottom: 40px;
+
+    }
+    .navbuttons button {
+      /* background-color: #fafafa; */
+      /* color: white; */
+      /* border: 1px solid transparent; */
+      /* font-weight: 200; */
+      /* border-width: 2px; */
+    }
+    .about-me {
+      max-width: 470px;
+      text-align: justify;
+    }
+
+    /* Adjust this to be the natural width of the nav buttons. */
+    @media (max-width: 600px) {
+      .navbuttons button {
+        display: block;
+        margin-bottom: 2px;
+        width: 220px;
+        text-align: left;
+      }
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .main-container {
+        margin-top: 30px;
+      }
+      .profilepic {
+        width: 180px;
+        height: 180px;
+      }
+      .my-name {
+        margin-top: 20px;
+      }
+      .socialicons {
+        margin-bottom: 20px;
+      }
+      .navbuttons {
+        margin-bottom: 20px;
+      }
+      .about-me {
+        text-align: left;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="uk-container uk-container-small uk-flex uk-flex-center">
-    <div class="uk-flex uk-flex-middle uk-flex-column" style="margin-top: 5%;">
+    <div class="main-container uk-flex uk-flex-middle uk-flex-column">
       <div class="profilepic uk-box-shadow-large"></div>
-      <h1 class="uk-heading-primary"><span>Samuel</span>&nbsp;&nbsp;<span>Ainsworth</span></h1>
-      <div class="uk-margin-medium-bottom socialicons">
+      <h1 class="my-name uk-heading-primary"><span>Samuel</span>&nbsp;&nbsp;<span>Ainsworth</span></h1>
+      <div class="socialicons">
         <a href="mailto:skainsworth@gmail.com" class="uk-icon-button uk-margin-small-right" uk-icon="mail"></a>
         <a href="https://github.com/samuela" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
         <a href="https://www.linkedin.com/in/samuelainsworth" class="uk-icon-button" uk-icon="linkedin"></a>
       </div>
-      <div class="uk-margin-medium-bottom uk-flex">
-        <button class="uk-button uk-button-danger uk-margin-small-right">PUBLICATIONS</button>
-        <button class="uk-button uk-button-danger uk-margin-small-right">CODE</button>
-        <button class="uk-button uk-button-danger">CONSULTING</button>
+      <div class="navbuttons">
+        <button class="publications uk-button uk-button-danger">publications</button>
+        <button class="code uk-button uk-button-danger">code</button>
+        <button class="contact uk-button uk-button-danger">contact</button>
+        <button class="consulting uk-button uk-button-danger">consulting</button>
       </div>
-      <div class="uk-margin-medium-bottom uk-text-small" style="max-width: 450px; text-align: justify;">
+      <div class="about-me uk-margin-medium-bottom uk-text-small">
         <p>
           I'm a PhD student working on machine learning at the Paul G. Allen
           School of Computer Science &amp; Engineering at the University of
@@ -55,8 +109,6 @@
           self-driving cars among other wild things.
         </p>
       </div>
-
-
     </div>
   </div>
 
